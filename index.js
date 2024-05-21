@@ -46,6 +46,8 @@ const history = {
   },
 };
 
+// continuar a historia com mais opções de acontecimentos.
+
 let eventoAtual = history;
 
 while (eventoAtual) {
