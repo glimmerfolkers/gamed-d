@@ -59,6 +59,8 @@ while (eventoAtual) {
     for (let contador = 0; contador < eventoAtual.options.length; contador++) {
       console.log(contador + ". " + eventoAtual.options[contador].text);
     }
+
+    // pedir para o usuário escolher uma opção e ir pro proximo evento
   } else {
     console.log("Fim da história");
   }
