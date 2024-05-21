@@ -1,0 +1,9 @@
+{
+  "name": "gamed-d",
+  "version": "1.0.0",
+  "description": "game top",
+  "main": "index.js",
+  "repository": "git@github.com:glimmerfolkers/gamed-d.git",
+  "author": "fabio@timedeestudo.com",
+  "license": "MIT"
+}
