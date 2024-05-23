@@ -59,9 +59,16 @@ while (eventoAtual) {
     for (let contador = 0; contador < eventoAtual.options.length; contador++) {
       console.log(contador + ". " + eventoAtual.options[contador].text);
     }
+    const frase = "Leve a sério! Isso não é só um jogo!! Escolha uma opção";
+    const acao = parseInt(prompt(frase));
+
+    eventoAtual = history[eventoAtual.options[acao].next]
+    console.log(eventoAtual)
   } else {
     console.log("Fim da história");
+    break;
   }
 
-  break;
+
+
 }
