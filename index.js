@@ -28,7 +28,7 @@ const history = {
     ],
   },
   copaDaArvore: {
-    event: "Voce observa ao redor. O que voce ve?",
+    event: "Voce sobe na árvore e observa ao redor. O que voce ve?",
     options: [
       {
         text: "Uma cabana abandonada",
@@ -73,8 +73,8 @@ const history = {
         next: "pedra",
       },
       {
-        text: "Meias de proxedência duvidosa",
-        next: "meias",
+        text: "Um espelho mediano",
+        next: "espelho",
       },
     ]
   },
@@ -107,8 +107,81 @@ const history = {
         next: "encontro",
       },
     ]
+  },
+  Esconderijo: {
+    event: "Você busca ao seu redor um lugar para se esconder, qual é?",
+    options: [
+      {
+        text: "Atrás de uma árvore grande",
+        next: "arvoreGrande"
+      },
+      {
+        text: "No topo de uma árvore",
+        next: "copaDaArvore"
+      },
+    ]
+  },
+  desistir: {
+    final: "Você é pego, e vira o jantar do Ogro"
+  },
+  corrida: {
+    final: "Você foge do Ogro e consegue achar o caminho para a casa"
+  },
+  madeira: {
+    final: "Você bate no Ogro com a madeira, mas isso só o deixa mais furioso. Você morreu."
+  },
+  pedra: {
+    event: "Você joga a pedra e derrota o Ogro. Qual seu próximo passo?",
+    options: [
+      {
+        text: "Continuar explorando a floresta",
+        next: "continuar"
+      },
+      {
+        text: "Tentar achar um caminho para casa",
+        next: "cidade"
+      }
+    ]
+  },
+  espelho: {
+    event: "Você aponta o espelho para o Ogro e ele se assusta com a própria aparência. Qual seu próximo passo?",
+    options: [
+      {
+        text: "Continuar explorando a floresta",
+        next: "continuar"
+      },
+      {
+        text: "Tentar achar um caminho para casa",
+        next: "cidade"
+      }
+    ]
+  },
+  explorar: {
+    final: "Dentro da cabana você encontra uma bruxa. Ela joga veneno e você morre"
+  },
+  nadar: {
+    final: "No rio há jacarés, você morreu"
+  },
+  investigar: {
+    event: "Você percbe que o que destruiu a ponte foi uma criatura gigante não humana, o que você faz?",
+    options: [
+      { 
+        text: "Continuar explorando a floresta",
+        next: "continuar"
+      },
+      {
+        text: "Ficar quieto e pensar",
+        next: "encontro"
+      },
+      {
+        text: "Tentar achar um caminho para casa",
+        next: "cidade"
+      }
+    ]
+  },
+  continuar: {
+    final: "Você acaba adentrando demais na floresta e perceb que é um laberinto. Você está preso para sempre"
   }
-
 };
 
 // continuar a historia com mais opções de acontecimentos.
