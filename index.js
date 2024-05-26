@@ -64,6 +64,7 @@ while (eventoAtual) {
 
     eventoAtual = history[eventoAtual.options[acao].next]
     console.log(eventoAtual)
+
   } else {
     console.log("Fim da história");
     break;
