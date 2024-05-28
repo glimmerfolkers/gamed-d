@@ -3,10 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
     <title>Game d&d</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="header">
+        <img
+          src="assets/animations/drogo.gif"
+          alt=""
+          height="80"
+          style="transform: scale(-1, 1)"
+        />
+        <h1>Game d&d</h1>
+      </div>
+
+      <div class="content">
+        <div class="event">
+          <p id="event"></p>
+        </div>
+        <div class="animations">
+          <img src="" id="image" />
+        </div>
+        <div id="actions" style="margin: 40px"></div>
+      </div>
+    </div>
   </body>
 
   <script src="./index.js"></script>
